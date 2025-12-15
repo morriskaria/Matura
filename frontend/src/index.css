@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-dark-900 text-white font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .glow-pink {
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+  }
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.5);
+  }
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(0, 128, 255, 0.5);
+  }
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+
+  .neon-border {
+    border: 1px solid rgba(255, 0, 128, 0.3);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.2);
+  }
+
+  .neon-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      0 0 30px rgba(255, 0, 128, 0.1),
+      inset 0 0 30px rgba(128, 0, 255, 0.05);
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #ff0080, #8000ff, #0080ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
